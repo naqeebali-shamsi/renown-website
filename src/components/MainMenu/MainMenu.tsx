@@ -8,7 +8,7 @@ const MainMenu = (props: Props) => {
 
   return (
     <div className="main_menu">
-    <nav className="navbar navbar-expand-lg navbar-light">
+    <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container">
         <Link className="navbar-brand logo_h" href="/">
           <Image src="/images/Group 9.png" alt="" width={52} height={68} />
