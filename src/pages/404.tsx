@@ -15,7 +15,7 @@ const Custom404 = () => {
                 <div className="container">
                     <h1>Page not found!</h1>
                     <Image
-                        src="https://media.giphy.com/media/9J7tdYltWyXIY/giphy.gif"
+                        src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXUweGM3NjZqNDZyeWE0emppZTQyOHJhMDVmY2cycnN2eWt4bmd2aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/EIiJp9cQ3GeEU/giphy.gif"
                         alt="Picture of the author"
                         width={500}
                         height={500}
