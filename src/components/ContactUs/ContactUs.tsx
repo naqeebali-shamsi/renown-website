@@ -10,13 +10,12 @@ const ContactUs = (props: Props) => {
         <iframe
           width="600"
           height="450"
-          style="border:0"
+          style={{ border: 0 }}
           loading="lazy"
-          allowfullscreen
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB2TcfrXUStM3MMbBJG8tuIln9jxpGOU80
-            &q=Renown+Watch+Services">
-        </iframe>
+          allowFullScreen
+          referrerPolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Renown+Watch+Services"
+        ></iframe>
         </div>
         <div className="row">
           <div className="col-12">
