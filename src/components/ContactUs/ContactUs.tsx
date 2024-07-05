@@ -7,15 +7,16 @@ const ContactUs = (props: Props) => {
     <section className="contact-section area-padding">
       <div className="container">
         <div className="d-none d-sm-block mb-5 pb-4">
-          <iframe
-            src="https://www.google.com/maps/place/8+Westfield+Dr,+Whitby,+ON+L1P+0E7/@43.8778137,-78.9767149,17z/data=!3m1!4b1!4m6!3m5!1s0x89d51f62fbdc1f17:0x314979d0e9454094!8m2!3d43.8778099!4d-78.97414!16s%2Fg%2F11mw2yqkq2?entry=ttu"
-            width="100%"
-            height="450"
-            style={{ border: 0 }}
-            allowFullScreen={true}
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <iframe
+          width="600"
+          height="450"
+          style="border:0"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB2TcfrXUStM3MMbBJG8tuIln9jxpGOU80
+            &q=Renown+Watch+Services">
+        </iframe>
         </div>
         <div className="row">
           <div className="col-12">

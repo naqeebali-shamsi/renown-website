@@ -1,7 +1,9 @@
 [build]
   command = "next build"
   publish = ".next"
-# [[redirects]]
-#   from = "/*"
-#   to = "/index.html"
-#   status = 200
+
+# Remove this to start seeing content again
+[[redirects]]
+  from = "/*"
+  to = "/404"
+  status = 404
