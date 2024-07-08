@@ -1,3 +1,90 @@
-/* Dark Theme */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* Light Theme */
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Header Section */
+.header {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem; /* Adjust this value as needed */
+  padding: 0 1rem;
+}
+
+.header__logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: theme('colors.amber.600');
+}
+
+.header__nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header__nav-link {
+  color: theme('colors.gray.700');
+  transition: color 0.2s ease;
+}
+
+.header__nav-link:hover,
+.header__nav-link.active {
+  color: theme('colors.amber.600');
+}
+
+/* Dark mode styles */
+.dark .header {
+  background-color: theme('colors.gray.900');
+}
+
+.dark .header__logo-text {
+  color: theme('colors.amber.400');
+}
+
+.dark .header__nav-link {
+  color: theme('colors.gray.300');
+}
+
+.dark .header__nav-link:hover,
+.dark .header__nav-link.active {
+  color: theme('colors.amber.400');
+}
