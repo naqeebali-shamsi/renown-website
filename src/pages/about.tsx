@@ -1,13 +1,13 @@
 import React from "react";
 import { FlipWordsSection } from "@/components/flip-words-section/FlipWordsSection";
-import Header from "@/components/header/Header";
+// import Header from "@/components/header/Header";
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 export default function About() {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      <Header />
+      {/* <Header /> */}
       <div className="relative h-[50vh] flex items-center justify-center">
         <Image
           src="/hero-background.png"
