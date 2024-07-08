@@ -15,7 +15,7 @@ const services = [
   { name: 'Polishing', icon: <FaSprayCan className="w-8 h-8" /> },
 ];
 
-const ServiceCard = ({ name, icon }) => (
+const ServiceCard = ({ name, icon }: { name: string, icon: React.ReactNode }) => (
   <div className="bg-gray-800 p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-amber-500/50 hover:-translate-y-1">
     <div className="text-amber-500 mb-4">{icon}</div>
     <h3 className="text-lg font-semibold text-white mb-2">{name}</h3>
