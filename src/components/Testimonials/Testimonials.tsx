@@ -2,7 +2,7 @@ import React from 'react'
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import dynamic from "next/dynamic";
-import Image from "next/image"
+import Image from "next/legacy/image"
 const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
   ssr: false,
 });

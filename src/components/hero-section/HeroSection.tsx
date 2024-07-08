@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { Highlight } from "@/components/ui/hero-highlight";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export function HeroHighlightDemo() {
   return (

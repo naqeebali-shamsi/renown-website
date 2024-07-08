@@ -1,6 +1,6 @@
 import React from "react";
 import { Parallax } from "react-parallax";
-import Image from 'next/image';
+import Image from "next/legacy/image";
 
 type Props = {};
 
