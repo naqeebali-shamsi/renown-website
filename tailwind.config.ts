@@ -1,10 +1,12 @@
 import svgToDataUri from "mini-svg-data-uri";
 import { Config } from 'tailwindcss';
+const withMT = require("@material-tailwind/react/utils/withMT");
 
 const flattenColorPalette = require("tailwindcss/lib/util/flattenColorPalette");
 
 const config: Config = {
-  content: ["./src/**/*.{ts,tsx}"],
+  // Merged content paths
+  content: ["./src/**/*.{ts,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class",
   theme: {
     extend: {
@@ -50,4 +52,5 @@ function addVariablesForColors({ addBase, theme }: any) {
   });
 }
 
-export default config;
+// Wrap the config with withMT and export
+export default withMT(config);

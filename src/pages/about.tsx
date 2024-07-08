@@ -1,41 +1,69 @@
-import React from 'react'
-import Image from "next/legacy/image"
+import React from "react";
+import { FlipWordsSection } from "@/components/flip-words-section/FlipWordsSection";
+import Header from "@/components/header/Header";
+import Image from 'next/image';
+import { motion } from 'framer-motion';
 
-type Props = {}
-
-const About = (props: Props) => {
+export default function About() {
   return (
-    <section className="about-area area-padding">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6 d-none d-lg-block">
-              <div className="about-img">
-                <Image width={555} height={485} src="/images/about1.png.webp" alt="" />
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="about-content">
-                <h4>
-                  WE ARE ON EXPERT <br />
-                  THIS FIELD BUILDINGS
-                  <br />
-                  SOLUTIONS SINCE 1974.
-                </h4>
-                <p>
-                  Void gathering midst together you{`'`}re shall. Beast set he{" "}
-                  <br />
-                  likeness spirit winged two all fourth they{`'`}re gathered
-                  <br /> seasons very may heaven saying. Fly image th
-                </p>
-                <a className="main_btn" href="#">
-                  learn more
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-  )
-}
+    <div className="min-h-screen bg-gray-900 text-white">
+      <Header />
+      <div className="relative h-[50vh] flex items-center justify-center">
+        <Image
+          src="/hero-background.png"
+          layout="fill"
+          objectFit="cover"
+          alt="Watch background"
+          className="opacity-30"
+        />
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="relative z-10 text-center"
+        >
+          <h1 className="text-5xl font-bold mb-4">About Us</h1>
+          <FlipWordsSection />
+        </motion.div>
+      </div>
 
-export default About
+      <div className="container mx-auto px-4 py-16">
+        <motion.section 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+          className="mb-16"
+        >
+          <h2 className="text-3xl font-semibold mb-4">Our Story</h2>
+          <p className="text-lg">
+            Renown Watch Services has been a trusted name in watch repair and maintenance for over two decades...
+          </p>
+        </motion.section>
+
+        <motion.section 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4, duration: 0.8 }}
+          className="mb-16 bg-gray-800 p-8 rounded-lg"
+        >
+          <h2 className="text-3xl font-semibold mb-4">Our Expertise</h2>
+          <p className="text-lg">
+            We specialize in both vintage and modern watches, with expertise spanning across various brands and complications...
+          </p>
+        </motion.section>
+
+        <motion.section 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+          className="mb-16"
+        >
+          <h2 className="text-3xl font-semibold mb-4">Our Commitment</h2>
+          <p className="text-lg">
+            At Renown Watch Services, we don't just repair watches – we preserve timekeeping heritage...
+          </p>
+        </motion.section>
+      </div>
+    </div>
+  );
+}
