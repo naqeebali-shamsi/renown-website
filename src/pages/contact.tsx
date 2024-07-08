@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "@/components/header/Header";
+import Navbar from "@/components/navbar/Navbar";
 
 export function ContactUs() {
   return (
     <>
-      <Header />
+      <Navbar />
       <section className="bg-gray-900 text-white pt-20"> {/* Added pt-20 for padding top */}
         <div className="container px-6 py-12 mx-auto">
           <div>

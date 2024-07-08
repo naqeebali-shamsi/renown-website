@@ -3,7 +3,7 @@ import Image from "next/legacy/image";
 import { useState, useEffect } from 'react';
 import { cn } from '@/utils/cn';
 
-const Header = () => {
+const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -83,4 +83,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;
