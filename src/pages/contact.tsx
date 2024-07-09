@@ -50,7 +50,7 @@ export function ContactUs() {
                 <h2 className="mt-4 text-base font-medium text-white">Phone</h2>
                 <p className="mt-2 text-sm text-gray-400">Mon to Fri 6:30pm to 9pm</p>
                 <p className="mt-2 text-sm text-gray-400">Sat & Sun 10:30am to 5:00pm</p>
-                <p className="mt-2 text-sm text-amber-500">00 (440) 9865 562</p>
+                <p className="mt-2 text-sm text-amber-500">289-892-7786</p>
               </div>
             </div>
 
