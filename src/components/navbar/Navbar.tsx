@@ -74,7 +74,7 @@ const Navbar = () => {
       >
         <nav className="py-2">
           <Link href="/" className="block text-white hover:text-amber-400 px-4 py-2 transition-colors duration-200">Home</Link>
-          <Link href="/services" className="block text-white hover:text-amber-400 px-4 py-2 transition-colors duration-200">Services</Link>
+          <Link href="/#services" className="block text-white hover:text-amber-400 px-4 py-2 transition-colors duration-200">Services</Link>
           <Link href="/about" className="block text-white hover:text-amber-400 px-4 py-2 transition-colors duration-200">About</Link>
           <Link href="/contact" className="block text-white hover:text-amber-400 px-4 py-2 transition-colors duration-200">Contact</Link>
         </nav>
