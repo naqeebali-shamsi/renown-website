@@ -59,7 +59,7 @@ export function HeroHighlightDemo() {
           Renown Watch Services
         </motion.h1>
       </div>
-      <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8 text-center mb-80" style={{ opacity }}>
+      <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8 text-center pb-80 my-32">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
