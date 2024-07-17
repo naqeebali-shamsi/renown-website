@@ -4,12 +4,20 @@ import { useState, useEffect } from 'react';
 import { cn } from '@/utils/cn';
 
 const Navbar = () => {
+  const [scrollProgress, setScrollProgress] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
+      const heroSection = document.getElementById('hero-section');
+      if (heroSection) {
+        const heroHeight = heroSection.offsetHeight;
+        const scrollPosition = window.scrollY;
+        const progress = Math.min(scrollPosition / heroHeight, 1);
+        setScrollProgress(progress);
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -33,7 +41,9 @@ const Navbar = () => {
             width={40} 
             height={40} 
           />
-          <span className="text-amber-400 font-bold text-lg sm:text-xl">Renown Watch Services</span>
+          <div 
+            style = {{ opacity: scrollProgress }}
+            className="text-amber-300 font-bold text-lg sm:text-xl">Renown Watch Services</div>
         </Link>
         
         {/* Desktop Navigation */}
